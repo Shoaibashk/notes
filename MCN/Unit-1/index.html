@@ -12,23 +12,23 @@
         <meta name="description" content="My NOtes for Exams">
       
       
-        <link rel="canonical" href="https://shoaibashk.github.io/">
+        <link rel="canonical" href="https://shoaibashk.github.io/MCN/Unit-1/">
       
       
         <meta name="author" content="Shoaib Shaikh">
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.14">
     
     
       
-        <title>My Notes</title>
+        <title>Unit-1 Traffic Engineering And Signaling - My Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.593e13b9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.593e13b9.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.ff0a5ce4.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ff0a5ce4.min.css">
       
       
         
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-my-notes" class="md-skip">
+        <a href="#unit-1-traffic-engineering-and-signaling" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Unit-1 Traffic Engineering And Signaling
             
           </span>
         </div>
@@ -165,20 +165,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
     
@@ -188,7 +179,7 @@
 
 
   <li class="md-nav__item">
-    <a href="MCN/" title="MCN" class="md-nav__link">
+    <a href="../" title="MCN" class="md-nav__link">
       MCN
     </a>
   </li>
@@ -211,6 +202,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#telephone-traffic-profile" class="md-nav__link">
+    Telephone Traffic profile:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#traffic" class="md-nav__link">
+    Traffic:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#erlang" class="md-nav__link">
+    Erlang:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formula" class="md-nav__link">
+    Formula:
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -225,9 +252,71 @@
                   
                 
                 
-                <h1 id="welcome-to-my-notes">Welcome to My Notes <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></h1>
-<p>This is <strong>My Notes</strong> for Theory &amp; Practical Examination. All Subjects are listed <img alt="😄" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f604.svg" title=":smile:" /> :</p>
-<p><a href="MCN/">MCN</a></p>
+                <h1 id="unit-1-traffic-engineering-and-signaling">Unit-1 Traffic Engineering And Signaling</h1>
+<!-- 1. Telecommunication Traffic:
+    - unit of Traffic , Traffic measurement.
+    - A mathematical model:
+        1. Lost call systems:
+            - Theory , Traffic Performance.
+            - Loss systems in tandem.
+            - Traffic tables.
+        2. Queueing systems: 
+            - Erlang Distribution
+            -Probability of delay
+2. Signaling:
+    - CCITT Signaling System and Digital Customers line Signaling -->
+
+<hr />
+<h2 id="telephone-traffic-profile">Telephone Traffic profile:</h2>
+<ol>
+<li>
+<p>operater thus offer cheaper call rates during off-peak hours. It costs them almost nothing to carry such calls</p>
+</li>
+<li>
+<p>if they manage to shift some calls from peak and thus capital expenditure are needed.</p>
+</li>
+</ol>
+<p><a href="">call-hours-vs-time</a></p>
+<h2 id="traffic">Traffic:</h2>
+<ol>
+<li>
+<p>the traffic intensity (Sometimes refered as simply as Traffic) is defined as the average number of calls in progress simultaneously during a particular period of time.</p>
+</li>
+<li>
+<p>traffic intensity is a measure of the average occupancy of a server or resource during a specified period of time, normally a busy hour. It is measured in traffic units (erlangs) and defined as the ratio of the time during which a facility is cumulatively occupied to the time this facility is available for occupancy.</p>
+</li>
+</ol>
+<h2 id="erlang">Erlang:</h2>
+<ol>
+<li>It is dimensionless but name is given by Erlang(unit).</li>
+<li>
+<p>One Erlang (E) represents the amount of traffic carried by a trunk that is completely occupied i.e one call-hour per hour or one minute per minute.</p>
+</li>
+<li>
+<p>Traffic carried by a group of trunks is :</p>
+</li>
+</ol>
+<h2 id="formula">Formula:</h2>
+<p><center>
+    <h1>
+<span class="arithmatex">\(Traffic\)</span> = <span class="arithmatex">\(A\)</span>  = <span class="arithmatex">\(\frac {C \times h}{T}\)</span>
+    </h1>
+</center></p>
+<ul>
+<li>
+<p><strong>where</strong>:    </p>
+<ul>
+<li>A = Traffic in Erlang </li>
+<li>C = Average number of call arrivals during time T</li>
+<li>
+<p>h = average call holding time </p>
+</li>
+<li>
+<p>1 erlang = 36 ccs (centum call second per hour)</p>
+</li>
+</ul>
+</li>
+</ul>
                 
               
               
@@ -242,27 +331,6 @@
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-        
-          <a href="MCN/" title="MCN" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                MCN
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -316,20 +384,20 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.581c8fc6.min.js"></script>
-      <script src="assets/javascripts/bundle.66a8d459.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.581c8fc6.min.js"></script>
+      <script src="../../assets/javascripts/bundle.66a8d459.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.5eca75d3.min.js"
+            worker: "../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="javascripts/config.js"></script>
+        <script src="../../javascripts/config.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
