@@ -8,7 +8,8 @@ copyright: |
 
 plugins:
   - search
-  - mkdocs-jupyter
+  - mkdocs-jupyter:
+      include_source: True
   - minify:
       minify_html: true
 
@@ -16,56 +17,34 @@ theme:
   name: null
   custom_dir: docs/material
   language: en
-
   icon:
     logo: material/book-open-page-variant
   palette:
-    # scheme: red
-    primary: teal
-    accent: light-green
+    scheme: slate
+    primary: deep orange
+    accent: deep orange
   font:
     text: Roboto
     code: Roboto Mono
   features:
     - tabs
+    - instant
+
+
 
 
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.abbr
-  - markdown.extensions.attr_list
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
-      permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
+  - mdx_math
+  - codehilite
+  # - toc:
+  #     permalink: True
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.keys
 
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.snippets:
-      check_paths: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+
+
+
 
 
 # extra_javascript:
@@ -74,10 +53,10 @@ markdown_extensions:
 #   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_javascript:
-    - javascripts/config.js
+#     - javascripts/config.js
     - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
-    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-    - https://polyfill.io/v3/polyfill.min.js?features=es6
+
+
 
 extra:
 #   disqus: "https-shoaibashk-github-io"

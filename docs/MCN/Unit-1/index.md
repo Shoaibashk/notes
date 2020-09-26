@@ -40,9 +40,9 @@ It is  measured in traffic units (erlangs) and defined as the ratio of the time 
 
 ## Formula:
 <center>
-    <h1>
-$Traffic$ = $A$  = $\frac {C \times h}{T}$
-    </h1>
+$$
+Traffic= A  = \frac {C \times h}{T} 
+$$
 </center>
 
 - **where**:    
