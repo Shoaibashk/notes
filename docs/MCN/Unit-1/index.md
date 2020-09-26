@@ -27,9 +27,11 @@
 ## Traffic:
 1. the traffic intensity (Sometimes refered as simply as Traffic) is defined as the average number of calls in progress simultaneously during a particular period of time.
 
-2.  traffic intensity is a measure of the average occupancy of a server or resource during a specified period of time, normally a busy hour. It is measured in traffic units (erlangs) and defined as the ratio of the time during which a facility is cumulatively occupied to the time this facility is available for occupancy.
+2.  traffic intensity is a measure of the average occupancy of a server or resource during a specified period of time, normally a busy hour. 
+It is  measured in traffic units (erlangs) and defined as the ratio of the time during which a facility is cumulatively occupied to the time this facility is available for occupancy.
 
 ## Erlang:
+
 
 1. It is dimensionless but name is given by Erlang(unit).
 2. One Erlang (E) represents the amount of traffic carried by a trunk that is completely occupied i.e one call-hour per hour or one minute per minute.

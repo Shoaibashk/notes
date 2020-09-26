@@ -4,7 +4,7 @@ cd mkdocs-material
 
 python setup.py build
 
-mv build/lib/material ../docs
+mv build/lib/material /docs
 
 cd ..
 

@@ -4,39 +4,80 @@ site_url: https://shoaibashk.github.io
 site_description: My NOtes for Exams
 
 copyright: |
-  Copyright &copy; 2017 - 2020 <b target="_blank" rel="noopener">Shoaib Shaikh 😎</b>
+  Copyright &copy; 2017 - 2020 <b>Shoaib Shaikh 😎</b>
 
-theme:
-  name: material
+plugins:
+  - search
+  - mkdocs-jupyter
+  - minify:
+      minify_html: true
+
+theme: 
+  name: null
   custom_dir: docs/material
+  language: en
+
   icon:
     logo: material/book-open-page-variant
   palette:
-    scheme: slate
+    # scheme: red
     primary: teal
     accent: light-green
   font:
     text: Roboto
     code: Roboto Mono
-    size: 16
+  features:
+    - tabs
+
 
 markdown_extensions:
-    - attr_list
-    # - mdx_math
-    - smarty
-    - tables
-    - pymdownx.arithmatex:
-        generic: true
-    - extra
-    - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+  - markdown.extensions.admonition
+  - markdown.extensions.abbr
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
 
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# extra_javascript:
+#   - javascripts/config.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    - javascripts/config.js
+    - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    - https://polyfill.io/v3/polyfill.min.js?features=es6
 
 extra:
 #   disqus: "https-shoaibashk-github-io"
@@ -48,10 +89,10 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Shoaibashk
 
-plugins:
-  - search
-  - mkdocs-jupyter
+
 
 nav:
   - Home: index.md
-  - MCN:  MCN/index.md
+  - MCN: MCN/index.md
+   
+ 

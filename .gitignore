@@ -1,4 +1,3 @@
 
-.vscode/
-site/
-material/
+.vscode/*
+site/*
