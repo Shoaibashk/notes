@@ -7,5 +7,6 @@ build:
 deploy:
 	mkdocs gh-deploy
 
-
+check:
+	git pull
 	
