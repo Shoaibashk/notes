@@ -36,6 +36,11 @@ theme:
 
 
 markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.superfences
   - mdx_math
   - codehilite
   # - toc:
