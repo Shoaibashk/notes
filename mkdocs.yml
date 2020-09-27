@@ -1,6 +1,6 @@
 site_name: My Notes
 site_author: Shoaib Shaikh
-site_url: https://shoaibashk.github.io
+site_url: https://shoaibashk.github.io/notes
 site_description: My NOtes for Exams
 
 copyright: |
@@ -10,6 +10,8 @@ plugins:
   - search
   - mkdocs-jupyter:
       include_source: True
+      execute: True
+
   - minify:
       minify_html: true
 
@@ -20,7 +22,7 @@ theme:
   icon:
     logo: material/book-open-page-variant
   palette:
-    scheme: slate
+    # scheme: slate
     primary: deep orange
     accent: deep orange
   font:
