@@ -1,4 +1,3 @@
-
 # Unit-1 Traffic Engineering And Signaling
 
 <!-- 1. Telecommunication Traffic:
@@ -139,4 +138,3 @@ $$
 
 !!! attention
     Larger the grade of service the worse is the service given.
-
