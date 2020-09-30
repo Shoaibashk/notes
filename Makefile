@@ -1,12 +1,18 @@
-all:
-	./build.sh
+all: check convert build deploy
+	
 
-build:
+build: convert
 	mkdocs build
-
-deploy:
-	mkdocs gh-deploy
 
 check:
 	git pull
+
+convert:
+	python3 convert.py
+
+deploy: pull build convert
+	mkdocs gh-deploy
+
+serve: convert
+	mkdocs serve
 	

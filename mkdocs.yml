@@ -8,6 +8,11 @@ copyright: |
 
 plugins:
   - search
+  # - pdf-export:
+  #     verbose: true
+  #     media_type: print
+
+
   - mkdocs-jupyter:
       include_source: True
       execute: True

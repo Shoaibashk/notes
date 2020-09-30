@@ -21,10 +21,15 @@ jobs:
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip     # install pip
-          python3 -m pip install -r package-list.txt     # install mkdocs 
+          python3 -m pip install -r requirements.txt     # install mkdocs 
+      
+      - name: Converting Notebooks
+        run: |
+          make convert
+
 
       - name: Build site
-        run: mkdocs build
+        run: make build
 
       - name: Deploy
-        run: mkdocs gh-deploy
+        run: make deploy
