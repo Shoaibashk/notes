@@ -1,7 +1,7 @@
 all: check convert build deploy
 	
 
-build: convert
+build: 
 	mkdocs build
 
 check:
@@ -10,7 +10,7 @@ check:
 convert:
 	python3 convert.py
 
-deploy: pull build convert
+deploy:
 	mkdocs gh-deploy
 
 serve: convert
