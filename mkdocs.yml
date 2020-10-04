@@ -48,8 +48,8 @@ markdown_extensions:
   - pymdownx.superfences
   - mdx_math
   - codehilite
-  # - toc:
-  #     permalink: True
+  - toc:
+      permalink: True
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -66,7 +66,8 @@ markdown_extensions:
 
 extra_javascript:
 #     - javascripts/config.js
-    - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+
 
 
 
