@@ -92,13 +92,13 @@ The probabilty of finding a trunk busy is equal to the proportion of the time fo
 
 ## Congestion
 
-1. In a telephone exchange. It is possible that all subscribers make calls simultaneously. The cost of metting the demand is **prohibitive**
+1. In a telephone exchange. It is possible that all subscribers make calls simultaneously. The cost of meeting the demand is **prohibitive**
 
 2. Therefore , there is a possibility that all trunks is a group of trunks  are **Busy => Congestion**.
 
 3. **here are 2 types of telecommunication system**:
     - **Lost Call (LC) system.**
-        - In Lost calls system the will be just dropped.
+        - In Lost calls system the calls will be just dropped.
     - **Delay / queueing system.**
         - In delay systems calls coming in during congestion wait in a queue until on outgoing trunk becomes free.
 
@@ -107,7 +107,7 @@ The probabilty of finding a trunk busy is equal to the proportion of the time fo
 
 ## Grade of Service(GOS)
 
-1. The porportion of calls that is lost or delayed due to congestion is a measure of the quality of the service provided. It is called **grade of       service (GOS) B**.
+1. The proportion of calls that is lost or delayed due to congestion is a measure of the quality of the service provided. It is called **grade of       service (GOS) B**.
 
 2. If GOS is too large it will result in many users unable to make successfull calls and thus dissatisfied.
 3. If GOS is too small , unnecessory expenditure on equipment which is rarly used is made.
